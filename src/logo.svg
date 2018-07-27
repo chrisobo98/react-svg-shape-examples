@@ -1,0 +1,31 @@
+<!-- Define Artboard -->
+<svg width="320" height="320">
+
+    <!-- Circle requires 3 properties -->
+    <!-- cx: x-position of the center  -->
+    <!-- cy: y-position of the center -->
+    <circle cx="160" cy="160" r="160" /> 
+
+    <!-- r: radius -->
+    <ellipse cx="75" cy="75" rx="20" ry="5" stroke="red"/>
+
+    <!-- line -->
+    <line xl="160" yl="160" x2="21.4" y2="80"/>
+
+    <!-- building complex geometry, pass in a set of points to generate a polygon -->
+    <polygon points="50 160 55 180 70 180 60 190 65 205 50"
+            stroke="green"/>
+
+    <!-- grouping multiple shapes using the g element -->
+    <g class="tetrahedron" transform="rotate(0, 160, 160)">
+    <!-- transform moves and rotates -->
+    
+        <!-- path element creates all other basic shapes, complex syntax -->
+        <path d="M 0 60 L 30 0 L 60 60 z" stroke="#0074D9"/>
+
+        <!-- Requires a path definition attribute "d"-->
+        <path d="M 12 96 L 215 192 L 10 20 z" fill="#0074D9"/>
+    
+    </g>
+
+</svg>
